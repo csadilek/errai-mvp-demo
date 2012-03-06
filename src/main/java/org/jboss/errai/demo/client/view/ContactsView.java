@@ -36,7 +36,6 @@ public class ContactsView extends Composite implements ContactsPresenter.Display
     contentTable.getFlexCellFormatter().setVerticalAlignment(0, 0, DockPanel.ALIGN_TOP);
     
     // Create the menu
-    //
     HorizontalPanel hPanel = new HorizontalPanel();
     hPanel.setBorderWidth(0);
     hPanel.setSpacing(0);
@@ -49,7 +48,6 @@ public class ContactsView extends Composite implements ContactsPresenter.Display
     contentTable.setWidget(0, 0, hPanel);
     
     // Create the contacts list
-    //
     contactsTable = new FlexTable();
     contactsTable.setCellSpacing(0);
     contactsTable.setCellPadding(0);
@@ -109,6 +107,10 @@ public class ContactsView extends Composite implements ContactsPresenter.Display
     }
     
     return selectedRows;
+  }
+  
+  public void selectRow(int id) {
+    contactsTable.getRowFormatter().setStyleName(id, "selected");
   }
   
   public Widget asWidget() {

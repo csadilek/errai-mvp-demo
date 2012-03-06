@@ -103,6 +103,11 @@
 			<version>${errai.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.jboss.errai</groupId>
+			<artifactId>errai-uibinder</artifactId>
+			<version>${errai.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.mvel</groupId>
 			<artifactId>mvel2</artifactId>
 			<version>${mvel.version}</version>

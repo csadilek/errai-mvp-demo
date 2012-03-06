@@ -77,7 +77,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
     }
     
     if (presenter != null) {
-      presenter.go(container);
+      presenter.go(container, id);
     }
   }
 
