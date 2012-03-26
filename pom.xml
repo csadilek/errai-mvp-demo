@@ -11,8 +11,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<errai.version>2.0.Beta3</errai.version>
-		<errai.cdi.version>2.0.Beta3</errai.cdi.version>
+		<errai.version>2.0-SNAPSHOT</errai.version>
+		<errai.cdi.version>2.0-SNAPSHOT</errai.cdi.version>
 		<gwt.version>2.4.0</gwt.version>
 		<hsqldb.version>1.8.0.7</hsqldb.version>
 		<weld.version>1.1.5.Final</weld.version>
@@ -1558,7 +1558,7 @@
 								<delete dir="src/main/webapp/WEB-INF/lib" />
 								<delete dir="src/main/webapp/META-INF" />
 								<delete file="src/main/webapp/WEB-INF/web.xml" />
-								<delete dir="src/main/webapp/app" />
+								<delete dir="src/main/webapp/contacts" />
 								<delete dir="target" />
 
 								<copy file="src/${webDescriptor}/web.xml" toDir="src/main/webapp/WEB-INF" />
